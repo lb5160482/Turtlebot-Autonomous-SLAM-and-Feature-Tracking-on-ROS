@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+
+  <name>nav2d</name>
+  <version>0.1.4</version>
+  <description>Meta-Package containing modules for 2D-Navigation</description>
+  <maintainer email="sebastian.kasperski@dfki.de">Sebastian Kasperski</maintainer>
+  <license>GPLv3</license>
+  <url type="website">http://wiki.ros.org/navigation_2d</url>
+  <url type="repository">https://github.com/skasperski/navigation_2d.git</url>
+  <url type="bugtracker">https://github.com/skasperski/navigation_2d/issues</url>
+  <author email="sebastian.kasperski@dfki.de">Sebastian Kasperski</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>nav2d_msgs</run_depend>
+  <run_depend>nav2d_tutorials</run_depend>
+  <run_depend>nav2d_operator</run_depend>
+  <run_depend>nav2d_navigator</run_depend>
+  <run_depend>nav2d_localizer</run_depend>
+  <run_depend>nav2d_remote</run_depend>
+  <run_depend>nav2d_karto</run_depend>
+  <run_depend>nav2d_exploration</run_depend>
+
+  <export>
+     <metapackage/>
+  </export>
+
+</package>

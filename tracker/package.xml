@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>tracker</name>
+  <version>0.0.0</version>
+  <description>The learning_joy package</description>
+
+  <maintainer email="lbo2@jhu.edu">bo</maintainer>
+  <license>BSD</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>ar_track_alvar</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>ar_track_alvar</run_depend>
+
+</package>
+
+
+
+

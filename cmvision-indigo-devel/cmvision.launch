@@ -1,0 +1,24 @@
+<launch>
+
+  <!-- Location of the cmvision color file -->
+  <param name="cmvision/color_file" type="string" 
+         value="$(find cmvision)/colors/blue.txt" />
+
+  <!-- Turn debug output on or off -->
+  <param name="cmvision/debug_on" type="bool" value="true"/>
+
+  <!-- Turn color calibration on or off -->
+  <param name="cmvision/color_cal_on" type="bool" value="false"/>
+
+  <!-- Enable Mean shift filtering -->
+  <param name="cmvision/mean_shift_on" type="bool" value="false"/>
+
+  <!-- Spatial bandwidth: Bigger = smoother image -->
+  <param name="cmvision/spatial_radius_pix" type="double" value="2.0"/>
+
+  <!-- Color bandwidth: Bigger = smoother image-->
+  <param name="cmvision/color_radius_pix" type="double" value="40.0"/>
+
+  <node name="cmvision" pkg="cmvision" type="cmvision" args="image:=camera/rgb/image_color" 
+        output="screen" />
+</launch>

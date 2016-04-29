@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Project Name="nav2d_karto" InternalType="">
+  <Description/>
+  <Dependencies/>
+  <Settings Type="Dynamic Library">
+    <GlobalSettings>
+      <Compiler Options="" C_Options="" Assembler="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="">
+        <LibraryPath Value="."/>
+      </Linker>
+      <ResourceCompiler Options=""/>
+    </GlobalSettings>
+    <Configuration Name="Debug" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="-g" C_Options="-g" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Debug" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+    <Configuration Name="Release" CompilerType="gnu g++" DebuggerType="GNU gdb debugger" Type="Dynamic Library" BuildCmpWithGlobalSettings="append" BuildLnkWithGlobalSettings="append" BuildResWithGlobalSettings="append">
+      <Compiler Options="" C_Options="" Assembler="" Required="yes" PreCompiledHeader="" PCHInCommandLine="no" UseDifferentPCHFlags="no" PCHFlags="">
+        <IncludePath Value="."/>
+      </Compiler>
+      <Linker Options="-O2" Required="yes"/>
+      <ResourceCompiler Options="" Required="no"/>
+      <General OutputFile="" IntermediateDirectory="./Release" Command="" CommandArguments="" UseSeparateDebugArgs="no" DebugArguments="" WorkingDirectory="$(IntermediateDirectory)" PauseExecWhenProcTerminates="yes" IsGUIProgram="no" IsEnabled="yes"/>
+      <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
+        <![CDATA[]]>
+      </Environment>
+      <Debugger IsRemote="no" RemoteHostName="" RemoteHostPort="" DebuggerPath="">
+        <DebuggerSearchPaths/>
+        <PostConnectCommands/>
+        <StartupCommands/>
+      </Debugger>
+      <PreBuild/>
+      <PostBuild/>
+      <CustomBuild Enabled="yes">
+        <RebuildCommand/>
+        <CleanCommand>make clean</CleanCommand>
+        <BuildCommand>make</BuildCommand>
+        <PreprocessFileCommand/>
+        <SingleFileCommand/>
+        <MakefileGenerationCommand/>
+        <ThirdPartyToolName>None</ThirdPartyToolName>
+        <WorkingDirectory>$(WorkspacePath)</WorkingDirectory>
+      </CustomBuild>
+      <AdditionalRules>
+        <CustomPostBuild/>
+        <CustomPreBuild/>
+      </AdditionalRules>
+      <Completion EnableCpp11="no">
+        <ClangCmpFlagsC/>
+        <ClangCmpFlags/>
+        <ClangPP/>
+        <SearchPaths/>
+      </Completion>
+    </Configuration>
+  </Settings>
+  <VirtualDirectory Name="catkin">
+    <File Name="CMakeLists.txt"/>
+    <File Name="package.xml"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="src">
+    <File Name="src/MapperNode.cpp"/>
+    <File Name="src/MultiMapper.cpp"/>
+    <File Name="src/SpaSolver.cpp"/>
+    <File Name="src/csparse.cpp"/>
+    <File Name="src/spa2d.cpp"/>
+    <File Name="src/G2oSolver.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="include">
+    <File Name="include/csparse.h"/>
+    <File Name="include/spa2d.h"/>
+    <File Name="include/nav2d_karto/MultiMapper.h"/>
+    <File Name="include/nav2d_karto/SpaSolver.h"/>
+    <File Name="include/nav2d_karto/G2oSolver.h"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="OpenKarto">
+    <VirtualDirectory Name="include">
+      <File Name="OpenKarto/source/OpenKarto/AbstractGpsEstimationManager.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Any.h"/>
+      <File Name="OpenKarto/source/OpenKarto/CoordinateConverter.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Dataset.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Deprecated.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Event.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Exception.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Geometry.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Grid.h"/>
+      <File Name="OpenKarto/source/OpenKarto/GridIndexLookup.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Identifier.h"/>
+      <File Name="OpenKarto/source/OpenKarto/List.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Logger.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Macros.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Math.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Meta.h"/>
+      <File Name="OpenKarto/source/OpenKarto/MetaAttribute.h"/>
+      <File Name="OpenKarto/source/OpenKarto/MetaClass.h"/>
+      <File Name="OpenKarto/source/OpenKarto/MetaClassHelper.h"/>
+      <File Name="OpenKarto/source/OpenKarto/MetaClassManager.h"/>
+      <File Name="OpenKarto/source/OpenKarto/MetaEnum.h"/>
+      <File Name="OpenKarto/source/OpenKarto/MetaEnumHelper.h"/>
+      <File Name="OpenKarto/source/OpenKarto/MetaEnumManager.h"/>
+      <File Name="OpenKarto/source/OpenKarto/MetaType.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Module.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Mutex.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Object.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Objects.h"/>
+      <File Name="OpenKarto/source/OpenKarto/OccupancyGrid.h"/>
+      <File Name="OpenKarto/source/OpenKarto/OpenKarto.h"/>
+      <File Name="OpenKarto/source/OpenKarto/OpenMapper.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Pair.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Parameter.h"/>
+      <File Name="OpenKarto/source/OpenKarto/PoseTransform.h"/>
+      <File Name="OpenKarto/source/OpenKarto/RangeTransform.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Referenced.h"/>
+      <File Name="OpenKarto/source/OpenKarto/RigidBodyTransform.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Sensor.h"/>
+      <File Name="OpenKarto/source/OpenKarto/SensorData.h"/>
+      <File Name="OpenKarto/source/OpenKarto/SensorRegistry.h"/>
+      <File Name="OpenKarto/source/OpenKarto/SmartPointer.h"/>
+      <File Name="OpenKarto/source/OpenKarto/String.h"/>
+      <File Name="OpenKarto/source/OpenKarto/StringHelper.h"/>
+      <File Name="OpenKarto/source/OpenKarto/TypeCasts.h"/>
+      <File Name="OpenKarto/source/OpenKarto/Types.h"/>
+    </VirtualDirectory>
+    <File Name="OpenKarto/source/Any.cpp"/>
+    <File Name="OpenKarto/source/Dataset.cpp"/>
+    <File Name="OpenKarto/source/Event.cpp"/>
+    <File Name="OpenKarto/source/Exception.cpp"/>
+    <File Name="OpenKarto/source/Geometry.cpp"/>
+    <File Name="OpenKarto/source/Grid.cpp"/>
+    <File Name="OpenKarto/source/GridIndexLookup.cpp"/>
+    <File Name="OpenKarto/source/Identifier.cpp"/>
+    <File Name="OpenKarto/source/Logger.cpp"/>
+    <File Name="OpenKarto/source/Meta.cpp"/>
+    <File Name="OpenKarto/source/MetaAttribute.cpp"/>
+    <File Name="OpenKarto/source/MetaClass.cpp"/>
+    <File Name="OpenKarto/source/MetaClassManager.cpp"/>
+    <File Name="OpenKarto/source/MetaEnum.cpp"/>
+    <File Name="OpenKarto/source/MetaEnumHelper.cpp"/>
+    <File Name="OpenKarto/source/MetaEnumManager.cpp"/>
+    <File Name="OpenKarto/source/Module.cpp"/>
+    <File Name="OpenKarto/source/Mutex.cpp"/>
+    <File Name="OpenKarto/source/Object.cpp"/>
+    <File Name="OpenKarto/source/Objects.cpp"/>
+    <File Name="OpenKarto/source/OccupancyGrid.cpp"/>
+    <File Name="OpenKarto/source/OpenKarto.cpp"/>
+    <File Name="OpenKarto/source/OpenMapper.cpp"/>
+    <File Name="OpenKarto/source/Parameter.cpp"/>
+    <File Name="OpenKarto/source/PoseTransform.cpp"/>
+    <File Name="OpenKarto/source/RangeTransform.cpp"/>
+    <File Name="OpenKarto/source/Referenced.cpp"/>
+    <File Name="OpenKarto/source/RigidBodyTransform.cpp"/>
+    <File Name="OpenKarto/source/Sensor.cpp"/>
+    <File Name="OpenKarto/source/SensorData.cpp"/>
+    <File Name="OpenKarto/source/SensorRegistry.cpp"/>
+    <File Name="OpenKarto/source/String.cpp"/>
+    <File Name="OpenKarto/source/StringHelper.cpp"/>
+  </VirtualDirectory>
+  <VirtualDirectory Name="cmake_modules">
+    <File Name="cmake_modules/FindCSparse.cmake"/>
+    <File Name="cmake_modules/FindCholmod.cmake"/>
+    <File Name="cmake_modules/FindG2O.cmake"/>
+    <File Name="cmake_modules/FindSuiteSparse.cmake"/>
+  </VirtualDirectory>
+</CodeLite_Project>

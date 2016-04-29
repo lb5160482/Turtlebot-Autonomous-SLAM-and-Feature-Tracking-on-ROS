@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<package>
+  <name>cmvision</name>
+  <version>0.4.1</version>
+  <description>
+    Node for the Color Machine Vision Project, used for fast color blob detection
+  </description>
+
+  <maintainer email="piyushk@gmail.com">Piyush Khandelwal</maintainer>
+
+  <license>LGPL</license>
+
+  <url type="website">http://ros.org/wiki/cmvision</url>
+  <url type="repository">https://github.com/utexas-bwi/cmvision</url>
+  <url type="bugtracker">https://github.com/utexas-bwi/cmvision/issues</url>
+
+  <author>Nate Koenig</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>fltk</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>wxwidgets</build_depend>
+
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>fltk</run_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>wxwidgets</run_depend>
+
+</package>
