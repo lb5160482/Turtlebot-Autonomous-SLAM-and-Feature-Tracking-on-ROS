@@ -1,0 +1,31 @@
+<launch>
+	  <arg name="custom_param_file" default="$(find turtlebot_navigation)/param/dummy.yaml"/>
+	  <!-- Map server -->
+	  <arg name="map_file" default="/tmp/lab_map.yaml"/>
+	  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+	  <arg name="initial_pose_x" default="0.0"/> <!-- Use 17.0 for willow's map in simulation -->
+	  <arg name="initial_pose_y" default="0.0"/> <!-- Use 17.0 for willow's map in simulation -->
+	  <arg name="initial_pose_a" default="0.0"/>
+	  <include file="$(find turtlebot_navigation)/launch/includes/amcl.launch.xml">
+	    <arg name="initial_pose_x" value="$(arg initial_pose_x)"/>
+	    <arg name="initial_pose_y" value="$(arg initial_pose_y)"/>
+	    <arg name="initial_pose_a" value="$(arg initial_pose_a)"/>
+	  </include>
+
+	  <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml">
+	    <arg name="custom_param_file" value="$(arg custom_param_file)"/>
+	  </include>
+
+	<arg name="marker_size" default="15" />
+	<arg name="max_new_marker_error" default="0.08" />
+	<arg name="max_track_error" default="0.2" />
+
+	<arg name="cam_image_topic" default="/camera/depth_registered/points" />
+	<arg name="cam_info_topic" default="/camera/rgb/camera_info" />		
+	<arg name="output_frame" default="/base_link" />
+
+	<node name="ar_track_alvar" pkg="ar_track_alvar" type="individualMarkers" respawn="false" output="screen" args="$(arg marker_size) $(arg max_new_marker_error) $(arg max_track_error) $(arg cam_image_topic) $(arg cam_info_topic) $(arg output_frame)" />
+
+	<include file="$(find cmvision_3d)/launch/color_tracker.launch"/>
+</launch>

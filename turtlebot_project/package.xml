@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package>
+  <name>turtlebot_project</name>
+  <version>0.0.0</version>
+  <description>The turtlebotProject package</description>
+
+  <maintainer email="lbo2@jhu.edu">bo</maintainer>
+  <license>BSD</license>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>pocketsphinx</build_depend>
+  <build_depend>ar_track_alvar</build_depend>
+  <build_depend>cmvision_3d</build_depend>
+  <build_depend>nav2d_operator</build_depend>
+  <build_depend>nav2d_karto</build_depend>
+  <build_depend>nav2d_navigator</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>pocketsphinx</run_depend>
+  <run_depend>ar_track_alvar</run_depend>
+  <run_depend>cmvision_3d</run_depend>
+  <run_depend>nav2d_operator</run_depend>
+  <run_depend>nav2d_karto</run_depend>
+  <run_depend>nav2d_navigator</run_depend>
+  <run_depend>turtlebot_bringup</run_depend>
+  <run_depend>turtlebot_navigation</run_depend>
+  <run_depend>map_server</run_depend>
+  
+  
+</package>
+
+
+
+

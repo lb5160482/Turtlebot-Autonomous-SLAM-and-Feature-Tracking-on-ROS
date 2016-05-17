@@ -1,0 +1,9 @@
+<launch>
+     <include file="$(find turtlebot_bringup)/launch/minimal.launch"/>
+     <arg name="custom_param_file" default="$(find turtlebot_navigation)/param/dummy.yaml"/>
+     <include file="$(find turtlebot_bringup)/launch/3dsensor.launch">
+             <arg name="scan_topic" value="/scan" />
+     </include>
+     <node name="mapsaver" pkg="turtlebot_project" type="mapsaver" output="screen"/>
+    
+ </launch>

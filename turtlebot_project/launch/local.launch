@@ -1,0 +1,9 @@
+<launch>
+	<node name="Joystick" pkg="joy" type="joy_node" />
+	<node name="startArTracking" pkg="turtlebot_project" type="startArTracking" />
+	<node name="startColorTracking" pkg="turtlebot_project" type="startColorTracking" />
+	<node name="viewNavigation" pkg="turtlebot_project" type="viewNavigation" />
+	<node name="selector" pkg="turtlebot_project" type="selector.py" output="screen" />
+	<node name="startVoice" pkg="turtlebot_project" type="startVoice" output="screen" />
+
+</launch>
