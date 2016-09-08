@@ -16,21 +16,21 @@ The Main idea of this project is to use one Kinect-TurtleBot robot to autonomous
 
 ## 1. Nodes Created
 
-### ARtracker.cpp:  
+### [ARtracker.cpp](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/src/ARtracker.cpp)
 This node subscribes from “/ar_pose_marker” topic and sends message to "/mobile_base/commands/velocity" topic. According to the relative position of the AR tag, it does the path planning and sends the Turtlebot velocity message to the topic.   
-### colorTracker.cpp:  
+### [colorTracker.cpp](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/src/colorTracker.cpp)
 This node subscribes from “/blobs_3d” topic and sends message to "/mobile_base/commands/velocity". According to the relative position of the color blob, it does the path planning and sends the Turtlebot velocity message to the topic.  
-### mapsaver.cpp:  
+### [mapsaver.cpp](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/src/mapsaver.cpp)  
 This node subscribes from “/joy” topic and runs the bash command to save the map when the X button on the joystick is pressed.  
-### startArTracking.cpp:  
+### [startArTracking.cpp](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/src/startArTracking.cpp)
 This node subscribes from “/joy” topic and runs the bash command to start tracking the AR tagwhen the START button on the joystick is pressed.  
-###startColorTracking.cpp:  
-This node subscribes from “/joy” topic and runs the bash command to start tracking the color when the LB button on the joystick is pressed.  
-###viewNavigation.cpp:  
+### [startColorTracking.cpp](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/src/startColorTracking.cpp)
+This node subscribes from “/joy” topic and runs the bash command to start tracking the color when the LB button on the joystick is pressed.
+### [viewNavigation.cpp](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/src/viewNavigation.cpp)
 This node subscribes from “/joy” topic and runs the bash command to view Turtlebor navigation in Rviz when the BACK button on the joystick is pressed.  
-### startVoice.cpp:  
+### [startVoice.cpp](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/src/startVoice.cpp)
 This node subscribes from “/joy” topic and runs the bash command to view start the voice control nodes when the right axle on the joystick is pressed.  
-###Selector.py:  
+### [Selector.py](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/src/selector.py)
 This node subscribes from “/joy” topic and runs corresponding bash commands to: 
 * 1. Stop AR tag tracking when A button on the joystick is pressed.  
 * 2. Stop color tracking when RB button on the joystick is pressed. 
@@ -38,13 +38,13 @@ This node subscribes from “/joy” topic and runs corresponding bash commands 
 
 ## 2. Launch Files
 
-### Startup.launch:  
+### [Startup.launch](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/launch/startup.launch)
 This launch file firstly launches minimal.launch in turtlebot_bringup package to start the necessary nodes for running the turtlebot. Then it launches 3dsensor.launch in turtlebot_bringup package to get depth image from the kinect. This launch file is run on the turtlebot.
-### AutoMapping.launch:  
+### [AutoMapping.launch](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/launch/AutoMapping.launch)
 This launch file start autonomous mapping by using the operator node in nav2d_operator package to do autonomous obstacle avoidance and navigator node in nav2d_navigator package to do path planning cooperating with launching the gmapping.launch to do the SLAM. This launch file is run on the workstation.  
-### local.launch:  
+### [local.launch](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/launch/local.launch)
 This launch file launches a bunch of nodes we wrote to do the specific tasks. This launch file is run on the workstation.  
-### trackPass.launch:  
+### [trackPass.launch](https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/turtlebot_project/launch/trackPass.launch)
 This launch file loads the map the robot generated, launches the nodes in turtlebot_navigation package, the ar_track_alvar node in ar_track_alvar package to recognize the AR tag and nodes in cmvision_3d package to recognize the specific color we set. This launch file is run on Turtlebot.
 
 ## 3. Existing Software Packages
