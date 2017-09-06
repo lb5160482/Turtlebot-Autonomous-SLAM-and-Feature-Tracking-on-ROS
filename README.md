@@ -72,7 +72,7 @@ The gmapping package provides a ros node (slam_gmapping), which has a laser-base
 <p align="center">Map Generated and Cost Map During Mapping</p>
 <br>
 <p align="center">
-  <td><img src="https://dscl.lcsr.jhu.edu/main/images/f/f7/AR.jpg" width="300px" height="225px"/><img src="https://dscl.lcsr.jhu.edu/main/images/f/f2/Color.jpg" width="300px" height="225px"/></td>
+  <td><img src="https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/imgs/tag%26color.png" width="550px" height="225px"/></td>
 </p>
 <p align="center">AR Tag Recognition and Color Recognition</p>
 
