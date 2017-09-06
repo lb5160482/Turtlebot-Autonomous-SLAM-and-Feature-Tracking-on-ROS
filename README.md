@@ -50,19 +50,19 @@ This launch file loads the map the robot generated, launches the nodes in turtle
 
 ## 3. Existing Software Packages
 
-###[Cmvision package](http://wiki.ros.org/cmvision)  
+### [Cmvision package](http://wiki.ros.org/cmvision)  
 This package was used for fast color blob detection and usually combined with Cmvision_3d Packages for the 3D color tracking.  
-###[Joy package](http://wiki.ros.org/joy)
+### [Joy package](http://wiki.ros.org/joy)
 Joy Package publishes topic(/joy) depend on the inputs of the controller and it includes the state of each one of the joystick's buttons and axes.
-###[Pocketsohinx Package](http://wiki.ros.org/pocketsphinx)
+### [Pocketsohinx Package](http://wiki.ros.org/pocketsphinx)
 This package includes a well-developed voice dictionary, a voice recognizer, and corresponding movements using python based interface.
-###[AR_Track_Alvar Package](http://wiki.ros.org/ar_track_alvar)
+### [AR_Track_Alvar Package](http://wiki.ros.org/ar_track_alvar)
 This package is a ROS wrapper for Alvar, an AR tag tracking library. The published topic, ar_pose_marker, includes a list of the poses of the observed AR tag, with respect to the output frame.
-###[Cmvision_3d Packages](http://wiki.ros.org/cmvision_3d)
+### [Cmvision_3d Packages](http://wiki.ros.org/cmvision_3d)
 Cmvision_3d uses the topic produced by cmvision to publish the position of each color blob relative to its camera frame, and the frames in the tf stack for each color.
-###[Navigation_2D Package](http://wiki.ros.org/nav2d)
+### [Navigation_2D Package](http://wiki.ros.org/nav2d)
 This package includes the obstacle avoidance, a simple path planner, and a graph based SLAM (Simultaneous Localization and Mapping) node that allows robots generate a map of a planar environment.
-###[Gmapping](http://wiki.ros.org/gmapping)
+### [Gmapping](http://wiki.ros.org/gmapping)
 The gmapping package provides a ros node (slam_gmapping), which has a laser-based SLAM feature.
 
 ## 4. Sample Data
