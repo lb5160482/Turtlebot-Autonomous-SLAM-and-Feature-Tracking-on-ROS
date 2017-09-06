@@ -4,7 +4,7 @@
 </p>
 The Main idea of this project is to use one Kinect-TurtleBot robot to autonomously explore the lab room and generate a 2D floor map, then it will delivery objects from one person to the other. After generating the map autonomously, the robot will navigate itself to one of the teammates where there is an AR tag to guide the robot. The person waits at the first position and loads the delivery object on the turtlebot. After that, the robot will navigate itself to a rough area in the other half of the lab room using the map it previously generated.Then the robot will move towards another person (this feature also can be triggered by the voice control), where there is a purple color tag to let the robot track. Another person waiting there will pick up the delivery object from the turtlebot and the object delivery part completes. We add a joystick to select the working mode of the robot and we can control the whole process using a joystick.The instructions on the joystick are shown below: 
 <p align="center">
-<img src="https://dscl.lcsr.jhu.edu/main/images/thumb/f/fa/Tag.jpg/900px-Tag.jpg" width="570px" height="370px"/>
+<img src="https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/imgs/joystick.png" width="530px" height="270px"/>
 </p>
 ## 0. Index
 
