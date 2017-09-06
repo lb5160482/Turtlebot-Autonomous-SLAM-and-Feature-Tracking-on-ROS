@@ -6,6 +6,7 @@ The Main idea of this project is to use one Kinect-TurtleBot robot to autonomous
 <p align="center">
 <img src="https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/imgs/joystick.png" width="530px" height="270px"/>
 </p>
+
 ## 0. Index
 
 1. [Nodes Created](#1-nodes-created)
@@ -66,7 +67,7 @@ The gmapping package provides a ros node (slam_gmapping), which has a laser-base
 
 ## 4. Sample Data
 <p align="center">
-  <td><img src="https://dscl.lcsr.jhu.edu/main/images/7/73/Labmap.jpg" width="225px" height="300px"/><img src="https://dscl.lcsr.jhu.edu/main/images/6/65/Costmap.png" width="225px" height="300px"/></td>
+  <td><img src="https://dscl.lcsr.jhu.edu/main/images/7/73/Labmap.jpg" width="225px" height="300px"/><img src="https://github.com/lb5160482/Turtlebot-Autonomous-SLAM-and-Feature-Tracking-on-ROS/blob/master/imgs/map.png" width="225px" height="300px"/></td>
 </p>
 <p align="center">Map Generated and Cost Map During Mapping</p>
 <br>
