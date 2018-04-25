@@ -77,4 +77,4 @@ The gmapping package provides a ros node (slam_gmapping), which has a laser-base
 <p align="center">AR Tag Recognition and Color Recognition</p>
 
 ## 5. Video
-https://www.youtube.com/watch?v=TV-s2yyTPh0
+https://youtu.be/JY9hPmRFG_k
